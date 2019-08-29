@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'movie_detail.dart';
 
 class MovieTile extends StatelessWidget {
   final movies;
@@ -10,7 +11,7 @@ class MovieTile extends StatelessWidget {
   MovieTile(this.movies, this.i);
 
   @override
-  Widget build(BuildContext context) => Column(
+  Widget build(BuildContext context) => Row(
         children: <Widget>[
           ListTile(
             leading: Container(
@@ -37,11 +38,12 @@ class MovieTile extends StatelessWidget {
               style: new TextStyle(
                   color: Colors.black, fontSize: 16.0, fontFamily: 'Lato'),
             )),
-            /*onTap: (){
-          Navigator.push(context, MaterialPageRoute(
-            builder: (context) => DetailMovie(movie:_movie)
-          ));
-        },*/
+            /*onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => MovieDetail(movies: _movie)));
+            },*/
           ),
           Divider()
         ],

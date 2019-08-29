@@ -20,7 +20,7 @@ class MovieDetail extends StatelessWidget {
         new BackdropFilter(
           filter: new ui.ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
           child: new Container(
-            color: Colors.black.withOpacity(0.5),
+            color: Colors.black.withOpacity(0.7),
           ),
         ),
         new SingleChildScrollView(
